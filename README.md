@@ -4,7 +4,7 @@
 
 This project predicts which of a bank's customers are likely to leave, then turns those predictions into a contact list that maximises the value of an (illustrative) retention campaign. Models are chosen with cross-validation, the test set is used only once, the predicted probabilities are checked for calibration, and the model is audited for differences across gender, country and age groups.
 
-🔗 **Live app:** _add your Streamlit Cloud link here_
+🔗 **Live app:** https://freddiehw-churn-model.streamlit.app/
 
 | | Result on 2,000 held-out test customers |
 |---|---|
