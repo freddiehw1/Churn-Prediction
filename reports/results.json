@@ -1,0 +1,292 @@
+{
+  "final_model": "Gradient boosting",
+  "final_features": "Raw, no gender",
+  "train_size": 8000,
+  "test_size": 2000,
+  "economics": {
+    "cost_per_contact": 5.0,
+    "value_per_save": 100.0,
+    "save_rate": 0.2
+  },
+  "chosen_threshold": 0.24,
+  "breakeven_threshold": 0.25,
+  "gender_decision": {
+    "model": "Gradient boosting",
+    "with_gender": "Raw",
+    "without_gender": "Raw, no gender",
+    "gain_from_gender": 0.003047532084765936,
+    "std_error": 0.01353768698416765,
+    "dropped": true
+  },
+  "cross_validation": [
+    {
+      "Model": "Logistic regression",
+      "Features": "Raw",
+      "PR-AUC": 0.4688,
+      "PR-AUC sd": 0.0342,
+      "ROC-AUC": 0.7628,
+      "ROC-AUC sd": 0.0222,
+      "Brier": 0.1365
+    },
+    {
+      "Model": "Random forest",
+      "Features": "Raw",
+      "PR-AUC": 0.6806,
+      "PR-AUC sd": 0.0215,
+      "ROC-AUC": 0.8577,
+      "ROC-AUC sd": 0.0124,
+      "Brier": 0.1057
+    },
+    {
+      "Model": "Gradient boosting",
+      "Features": "Raw",
+      "PR-AUC": 0.7004,
+      "PR-AUC sd": 0.0303,
+      "ROC-AUC": 0.8636,
+      "ROC-AUC sd": 0.0133,
+      "Brier": 0.102
+    },
+    {
+      "Model": "Logistic regression",
+      "Features": "Engineered",
+      "PR-AUC": 0.656,
+      "PR-AUC sd": 0.0174,
+      "ROC-AUC": 0.8433,
+      "ROC-AUC sd": 0.0123,
+      "Brier": 0.1102
+    },
+    {
+      "Model": "Random forest",
+      "Features": "Engineered",
+      "PR-AUC": 0.6904,
+      "PR-AUC sd": 0.0279,
+      "ROC-AUC": 0.8598,
+      "ROC-AUC sd": 0.0123,
+      "Brier": 0.1039
+    },
+    {
+      "Model": "Gradient boosting",
+      "Features": "Engineered",
+      "PR-AUC": 0.6969,
+      "PR-AUC sd": 0.0334,
+      "ROC-AUC": 0.8628,
+      "ROC-AUC sd": 0.0145,
+      "Brier": 0.1029
+    },
+    {
+      "Model": "Logistic regression",
+      "Features": "Raw, no gender",
+      "PR-AUC": 0.4601,
+      "PR-AUC sd": 0.0318,
+      "ROC-AUC": 0.7545,
+      "ROC-AUC sd": 0.0177,
+      "Brier": 0.1378
+    },
+    {
+      "Model": "Random forest",
+      "Features": "Raw, no gender",
+      "PR-AUC": 0.6831,
+      "PR-AUC sd": 0.0181,
+      "ROC-AUC": 0.8564,
+      "ROC-AUC sd": 0.0093,
+      "Brier": 0.1051
+    },
+    {
+      "Model": "Gradient boosting",
+      "Features": "Raw, no gender",
+      "PR-AUC": 0.6974,
+      "PR-AUC sd": 0.028,
+      "ROC-AUC": 0.8606,
+      "ROC-AUC sd": 0.0101,
+      "Brier": 0.1028
+    },
+    {
+      "Model": "Logistic regression",
+      "Features": "Engineered, no gender",
+      "PR-AUC": 0.6532,
+      "PR-AUC sd": 0.0161,
+      "ROC-AUC": 0.8389,
+      "ROC-AUC sd": 0.0097,
+      "Brier": 0.1109
+    },
+    {
+      "Model": "Random forest",
+      "Features": "Engineered, no gender",
+      "PR-AUC": 0.688,
+      "PR-AUC sd": 0.0248,
+      "ROC-AUC": 0.8576,
+      "ROC-AUC sd": 0.0107,
+      "Brier": 0.1043
+    },
+    {
+      "Model": "Gradient boosting",
+      "Features": "Engineered, no gender",
+      "PR-AUC": 0.6983,
+      "PR-AUC sd": 0.0281,
+      "ROC-AUC": 0.8612,
+      "ROC-AUC sd": 0.0106,
+      "Brier": 0.1029
+    }
+  ],
+  "test_metrics_at_chosen_threshold": {
+    "ROC-AUC": 0.8596878851116139,
+    "PR-AUC": 0.7045763012596603,
+    "Brier": 0.1015747974884079,
+    "Precision": 0.5393258426966292,
+    "Recall": 0.7076167076167076,
+    "F1": 0.61211477151966,
+    "Contact rate": 0.267,
+    "TP": 288.0,
+    "FP": 246.0,
+    "TN": 1347.0,
+    "FN": 119.0
+  },
+  "test_metrics_at_0.5": {
+    "ROC-AUC": 0.8596878851116139,
+    "PR-AUC": 0.7045763012596603,
+    "Brier": 0.1015747974884079,
+    "Precision": 0.7586206896551724,
+    "Recall": 0.4864864864864865,
+    "F1": 0.592814371257485,
+    "Contact rate": 0.1305,
+    "TP": 198.0,
+    "FP": 63.0,
+    "TN": 1530.0,
+    "FN": 209.0
+  },
+  "baseline_test_metrics_at_chosen_threshold": {
+    "ROC-AUC": 0.7747578086561138,
+    "PR-AUC": 0.47892814364307934,
+    "Brier": 0.134792261923436,
+    "Precision": 0.4161184210526316,
+    "Recall": 0.6216216216216216,
+    "F1": 0.49852216748768474,
+    "Contact rate": 0.304,
+    "TP": 253.0,
+    "FP": 355.0,
+    "TN": 1238.0,
+    "FN": 154.0
+  },
+  "test_net_benefit_by_strategy": {
+    "Contact nobody": 0.0,
+    "Contact everyone": -1859.999999999999,
+    "Final model, threshold 0.50": 2655.0,
+    "Final model, chosen threshold 0.24": 3090.0,
+    "Baseline logistic regression, threshold 0.24": 2020.0
+  },
+  "subgroups_test_set": [
+    {
+      "Group": "Gender: Female",
+      "Customers": 930,
+      "Actual churn rate": 0.2505,
+      "Mean predicted risk": 0.2169,
+      "ROC-AUC": 0.8629,
+      "Contact rate": 0.2935,
+      "Recall": 0.7082,
+      "False positive rate": 0.1549
+    },
+    {
+      "Group": "Gender: Male",
+      "Customers": 1070,
+      "Actual churn rate": 0.1626,
+      "Mean predicted risk": 0.1916,
+      "ROC-AUC": 0.8587,
+      "Contact rate": 0.2439,
+      "Recall": 0.7069,
+      "False positive rate": 0.154
+    },
+    {
+      "Group": "Geography: France",
+      "Customers": 1021,
+      "Actual churn rate": 0.1714,
+      "Mean predicted risk": 0.1609,
+      "ROC-AUC": 0.8451,
+      "Contact rate": 0.2125,
+      "Recall": 0.64,
+      "False positive rate": 0.1241
+    },
+    {
+      "Group": "Geography: Germany",
+      "Customers": 504,
+      "Actual churn rate": 0.2996,
+      "Mean predicted risk": 0.314,
+      "ROC-AUC": 0.8613,
+      "Contact rate": 0.4325,
+      "Recall": 0.8146,
+      "False positive rate": 0.2691
+    },
+    {
+      "Group": "Geography: Spain",
+      "Customers": 475,
+      "Actual churn rate": 0.1705,
+      "Mean predicted risk": 0.1774,
+      "ROC-AUC": 0.8639,
+      "Contact rate": 0.2084,
+      "Recall": 0.6543,
+      "False positive rate": 0.1168
+    },
+    {
+      "Group": "Age band: 18-30",
+      "Customers": 399,
+      "Actual churn rate": 0.0627,
+      "Mean predicted risk": 0.0752,
+      "ROC-AUC": 0.7503,
+      "Contact rate": 0.0551,
+      "Recall": 0.28,
+      "False positive rate": 0.0401
+    },
+    {
+      "Group": "Age band: 31-40",
+      "Customers": 868,
+      "Actual churn rate": 0.1141,
+      "Mean predicted risk": 0.1238,
+      "ROC-AUC": 0.7854,
+      "Contact rate": 0.1371,
+      "Recall": 0.4646,
+      "False positive rate": 0.0949
+    },
+    {
+      "Group": "Age band: 41-50",
+      "Customers": 492,
+      "Actual churn rate": 0.3496,
+      "Mean predicted risk": 0.3419,
+      "ROC-AUC": 0.8223,
+      "Contact rate": 0.5183,
+      "Recall": 0.8023,
+      "False positive rate": 0.3656
+    },
+    {
+      "Group": "Age band: 51-60",
+      "Customers": 152,
+      "Actual churn rate": 0.5855,
+      "Mean predicted risk": 0.5146,
+      "ROC-AUC": 0.8787,
+      "Contact rate": 0.7105,
+      "Recall": 0.9101,
+      "False positive rate": 0.4286
+    },
+    {
+      "Group": "Age band: 61+",
+      "Customers": 89,
+      "Actual churn rate": 0.2472,
+      "Mean predicted risk": 0.257,
+      "ROC-AUC": 0.8555,
+      "Contact rate": 0.3371,
+      "Recall": 0.7273,
+      "False positive rate": 0.209
+    }
+  ],
+  "mean_abs_shap_test_set": {
+    "NumOfProducts": 0.8284,
+    "Age": 0.8004,
+    "IsActiveMember": 0.3804,
+    "Balance": 0.2635,
+    "Geography_Germany": 0.161,
+    "EstimatedSalary": 0.1307,
+    "CreditScore": 0.1299,
+    "Tenure": 0.0611,
+    "Geography_France": 0.0498,
+    "HasCrCard": 0.0255,
+    "Geography_Spain": 0.0149
+  }
+}
